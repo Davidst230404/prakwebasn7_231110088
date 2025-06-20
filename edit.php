@@ -1,10 +1,10 @@
 <?php
 include 'db_connect.php';
 
-// Tangkap dan amankan ID
+// Menangkap dan Mengamankan ID
 $id = intval($_GET['id']);
 
-// Ambil data berdasarkan ID_Transaksi
+// Mengambil data berdasarkan ID_Transaksi
 $data = mysqli_query($conn, "SELECT * FROM transaksi_penjualan WHERE ID_Transaksi = $id");
 $row = mysqli_fetch_assoc($data);
 ?>
